@@ -1,0 +1,18 @@
+{# DIT IS EEN TEMPLATE -- HEAD EN BODY STEKEN IN DE INDEX-TWIG #}
+{% extends "_index" %}
+
+{% block content %}
+
+{% include "_snippets/_navbar" %}
+{# DIT IS HET BEGIN VAN DE BLOCK #}
+
+{% set image = entry.aboutImage.one() %}
+
+<section class="container-fluid p-md mt-xl">   
+    <h1 class="txt-heading_lg">{{entry.sectionTitle}}</h1>
+        <p class="txt-body_md">{{entry.sectionBodytext}}</p>
+    <img src={{ image.url }} alt={{ image.title }}></img>
+    <p class="txt-body_md">{{entry.sectionBodytext2}}</p>
+</section>
+
+{% endblock %}

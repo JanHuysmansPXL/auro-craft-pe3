@@ -1,0 +1,15 @@
+{% block content %}
+{# DIT IS HET BEGIN VAN DE BLOCK #}
+    {# NAVBAR TOP #}
+    <nav class="navbar bg-darkest container-fluid">
+        <div class="navbar-brand"><a class="brand-link" href="{{ siteUrl }}">AURO</a></div>
+        <div class="navbar-links">
+            <ul class="navbar-list">
+                <li class="navbar-listitem"><a href="{{ url('products') }}" class="navbar-link">Products</a></li>
+                <li class="navbar-listitem"><a href="#" class="navbar-link">Cart</a></li>
+                <li class="navbar-listitem"><a href="{{ url('about') }}" class="navbar-link">About</a></li>
+                <li class="navbar-listitem"><a href="#" class="login-button"><i class="fas fa-user-circle"></i> Login</a></li>
+            </ul>
+        </div>
+    </nav>
+{% endblock %}

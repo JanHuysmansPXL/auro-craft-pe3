@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - f63ac959-50e1-4e52-81ef-0fa2fe27393b # About-page
+handle: about
+maxAuthors: 1
+name: About
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  c8882d7d-4c84-40d3-a270-4653a2dfec91: # auro-craft
+    enabledByDefault: true
+    hasUrls: true
+    template: about-page.twig
+    uriFormat: about
+type: single

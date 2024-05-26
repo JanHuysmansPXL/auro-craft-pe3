@@ -1,0 +1,161 @@
+color: blue
+fieldLayouts:
+  a5343c8c-44d1-47d5-9a2b-96b1be1a8f07:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: 'Add a Pagetitle here.'
+            label: PageTitle
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: deaf09db-9223-4970-9712-8ccca416dbdd
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 818b0433-7a51-4cd8-96f4-2022cffcc1f7 # Heading Title
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 263fbf98-ba8a-4f8e-bb7b-e2e08aca00b2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a79f21c3-a954-495d-8f94-8b6fc88377b7 # Page Subtitle
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e08bbf78-9bb1-44be-b376-d45b5bfbb69d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ecf08738-def7-40fb-92d9-f458d6926431 # Header Button
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2c51c280-0834-49fe-a749-5de226a54b57
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3337ad6f-af9f-4439-817d-0586f687690a # Hero Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 15ab45dc-36e7-430e-b80f-495964d380be
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 18ce96ae-4177-430b-ad14-f2fc78551eb6
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: e382f540-6622-4500-804d-034bf966905c # SectionTitle
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 621660cc-1f9f-4029-baf2-cc52766b4f97
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: bbdd2418-0f9f-45ab-b477-bd4f526be57e # Section Subtitle
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3d688594-3bc4-4a17-a1c7-c8a87f23143c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 485aa77d-cdbd-41f9-b327-610c6c182c10 # Section Bodytext
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c8f559a0-91ec-4b5e-baf6-42e928360436
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Transition Text'
+        uid: 3d1da41c-d87b-424e-b3a1-013a604eb437
+        userCondition: null
+handle: homepageEntry
+hasTitleField: true
+icon: house
+name: Homepage-Entry
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

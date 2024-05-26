@@ -1,0 +1,65 @@
+color: null
+fieldLayouts:
+  91e6c9ad-a639-4e3a-b8a5-31d0e917c587:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 609b891d-0396-493a-bb54-8741b05053c3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 548730d6-8c6c-48bf-8ead-2ea64fb63952 # Description Large
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 91f5177e-9696-45dd-ad78-ee467c666d81
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c1c888de-9ebd-4789-b5e9-b6897ee2a749
+        userCondition: null
+handle: descriptionExtra
+hasTitleField: true
+icon: text
+name: 'Description Extra'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

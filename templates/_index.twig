@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <title>Welcome to Craft CMS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="referrer" content="origin-when-cross-origin" />
+
+    <!-- Link voor icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- Link voor Google Fonts - RED HAT DISPLAY -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@100;200;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    {# COUPLING STYLESHEET -- ADDED THIS TO LINK FRONTEND CSS AS A URL TO TWIG
+    <link rel="stylesheet" href="{{siteUrl}}css/main.css">  #}
+    {% do craft.app.view.registerCssFile('@web/frontend/css/main.css') %}
+</head>
+<body class="bg-darkest ps-md mt-md">
+
+{#
+<div>
+    <h1 class="mt-xl txt-light txt_body_xl">TEST TEST TEST INDEX TWIG</h1>
+
+    <h1class="txt-light txt_body_xl">{{ siteName }}</h1>
+
+ What about a dynamic value? 
+<p class="txt-light txt_body_xl">Today is {{ now | date }}!</p>#}
+
+{# This is a variable, and it’s being set to a list (or “array”) of colors: 
+{% set colors = ['red', 'green', 'blue'] %}#}
+
+{# How many colors are in the list? 
+<p class="mt-xl txt-light txt_body_xl">The following list contains {{ colors | length }} color(s).</p>#}
+
+{# This is a loop that outputs those items, sorted alphabetically:
+<ul>
+  {% for color in colors | sort %}
+    <li style="color: {{ color }}">
+      {# The color is capitalized for display: 
+      {{ color | title }}
+    </li>
+  {% endfor %}
+</ul>
+</div>  #}
+
+{% block content %}
+{% endblock %}
+
+</body>
+</html>
+
+

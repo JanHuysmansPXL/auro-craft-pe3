@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - dc19075c-155d-4afa-a469-d86a7c73a291 # Homepage-Entry
+handle: homepage
+maxAuthors: 1
+name: Homepage
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  c8882d7d-4c84-40d3-a270-4653a2dfec91: # auro-craft
+    enabledByDefault: true
+    hasUrls: true
+    template: home-page.twig
+    uriFormat: __home__
+type: single

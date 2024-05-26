@@ -1,0 +1,21 @@
+columnSuffix: null
+handle: productContent
+instructions: 'Add content to the product blog display.'
+name: 'Product Content'
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - 802276ea-8ed7-4724-b631-5b8ee98b5d7b # Description Extra
+    - 64376d7d-992a-4498-8887-6b6d3bcb36d8 # Image Extra
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

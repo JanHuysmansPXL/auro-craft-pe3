@@ -1,0 +1,29 @@
+{% block content %}
+
+{# Check if productImage exists before using it 
+    {% set image = entry.productImage.one() %} #}
+    <div class="card">
+        <div class="card-overlay">
+            <h1 class="card-overlay-heading txt-light">{{ entry.title }}</h1>
+            <p class="card-overlay-paragraph txt-light">{{ entry.price }}</p>
+            <a type="button" class="card-overlay-button" href="product_detail.html">Order now</a>
+        </div>
+       {# <img class="card-image" src="{{ image.url }}" alt="{{ image.title }}">#}
+    </div>
+{% endblock %}
+
+{# LIST OF PRODUCTS
+
+{% set products = craft.entries.section('productsTest').all() %}
+
+<div class="container">
+{% if products|length %}
+    <section class="cards-wrapper bg-black">
+        {% for product in products %}
+            {% include '_products/_product.twig' %}
+        {% endfor %}
+    </section>
+{% endif %}
+</div>
+
+#}

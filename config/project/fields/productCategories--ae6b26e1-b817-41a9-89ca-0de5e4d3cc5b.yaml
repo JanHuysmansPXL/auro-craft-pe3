@@ -1,0 +1,22 @@
+columnSuffix: null
+handle: productCategories
+instructions: 'Add a category'
+name: 'Product Categories'
+searchable: true
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  selectionLabel: null
+  showCardsInGrid: false
+  showSiteMenu: true
+  source: 'group:69cb2d0b-dde7-471f-8e3d-8ce3746e2c62' # Product Categories
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Categories

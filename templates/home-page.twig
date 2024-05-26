@@ -1,0 +1,81 @@
+{% extends "_index.twig" %}
+
+{% block content %}
+{# DIT IS DE NAVBAR #}
+{% include "_snippets/_navbar.twig" %}
+
+{# DIT IS HET BEGIN VAN DE BLOCK #}
+{# AFBEELDING URL INSTELLEN ALS VARIABLE OM VERKORT TE NOTEREN ALS HEROIMAGE.URL #}
+{% set heroImage = entry.heroImage.one() %}
+
+
+{# Debugging Output - REMOVE THIS AFTER CHECKING
+<div class="txt-light mt-xl">
+    {% if heroImage %}
+        Hero Image URL: {{ heroImage.url }}
+    {% else %}
+        No hero image set
+    {% endif %}
+</div> #}
+
+{# IMAGE SECTION #}
+<div class="container-fluid">
+    <section class="showcase">
+        <img class="img-bkg" src={{ heroImage.url }} alt={{ heroImage.alt }}>
+        {# <video class="video-bkg" src="assets/media/auro_vid2.mp4" muted loop autoplay></video> #}
+        <div class="overlay">
+            <div class="showcase-text">
+                <h2 class="txt-heading_xl">{{entry.headingTitle}}</h2>
+                <p class="txt-body_md">{{entry.headingSubtitle}}</p>
+                <a class="showcase-button" href="products.html">{{entry.headerButton}}</a>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- TRANSITION-PIECE MET BODYTEXT  -->
+<section class="home-transition">
+    <h1 class="txt-subheader">{{entry.sectiontitle}}</h1>
+    <h3 class="txt_body_xl">{{entry.sectionSubtitle}}</h3>
+    <p class="txt_body_xl">{{entry.sectionBodytext}}</p>
+</section>
+
+
+
+{# INLADEN PRODUCTEN UIT CRAFT ENTRIES.. ".ALL" IS ERG BERLANGRIJK OM DEZE EFFECTIEF UIT TE VOEREN. -> ANDERS NIKS.
+
+Filteren producten via order by / limit:
+{% set products = craft.entries.section('products').orderBy('price DESC').limit(3).all() %} #}
+
+{% set products = craft.entries.section('products').all() %}
+
+<div class="container-fluid">
+{% if products|length %}
+	<section class="cards-wrapper bg-black">
+		{% for product in products %}
+        {% set image = product.productImage.one() %}
+        <div class="card">
+            <div class="card-overlay">
+                <h1 class="card-overlay-heading txt-light">{{ product.title }}</h1>
+                <p class="card-overlay-paragraph txt-light">{{ product.price }}</p>
+                <a type="button" class="card-overlay-button" href="#">Order now</a>
+            </div>
+            <img class="card-image" src="{{ image.url }}" alt="{{ image.title }}">
+        </div>
+        {% endfor %}
+	</section>
+{% endif %}
+</div>
+
+{% if products|length %}
+    <section class="cards-wrapper bg-white">
+        {% for product in products %}
+            {% include '_products/_product.twig' %}
+        {% endfor %}
+    </section>
+{% endif %}
+
+
+{% include "_snippets/_footer.twig" %}
+
+{% endblock %}

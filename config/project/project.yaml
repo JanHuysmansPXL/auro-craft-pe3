@@ -1,0 +1,61 @@
+dateModified: 1716759886
+email:
+  fromEmail: 12201074@student.pxl.be
+  fromName: auro-craft
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  images:
+    hasUrls: true
+    name: Images
+    settings:
+      path: '@webroot/assets/images'
+    type: craft\fs\Local
+    url: '@web/assets/images'
+meta:
+  __names__:
+    0e584376-73fd-4211-8da1-a084ab59ce9e: images # images
+    2b50aeaf-630e-40de-9f85-5722be92682b: 'Product Card' # Product Card
+    5a02cde0-dfc9-41dd-add9-0085fdf6478c: 'Product Entry' # Product Entry
+    5abaf36c-a1ba-4e67-805e-ab9b554f279d: About # About
+    6bc3f43e-c5bd-4e4b-860b-61a47938c237: Homepage # Homepage
+    6c9b1183-2e60-43fd-944e-8169ff86fa56: productbutton # productbutton
+    6f357ba9-745d-43a5-b15d-a51e4210db0c: auro-craft # auro-craft
+    42db3d65-1575-49e2-bd36-9c432e8d400b: 'Public Schema' # Public Schema
+    69cb2d0b-dde7-471f-8e3d-8ce3746e2c62: 'Product Categories' # Product Categories
+    98c3dc06-93d3-4762-a012-2f5e3e528199: Price # Price
+    0171bf2f-ea8c-4569-aceb-c711956ef63e: Products # Products
+    179ce946-08aa-45b3-9c13-29121aeb7a21: 'ProductPage Entry' # ProductPage Entry
+    291a5e20-cc3e-4d3b-9ea6-acfd998fb2ae: 'Product Image' # Product Image
+    485aa77d-cdbd-41f9-b327-610c6c182c10: 'Section Bodytext' # Section Bodytext
+    818b0433-7a51-4cd8-96f4-2022cffcc1f7: 'Heading Title' # Heading Title
+    954ff18c-3452-44c1-b5ff-00e9ed37be2c: 'Products Test' # Products Test
+    3337ad6f-af9f-4439-817d-0586f687690a: 'Hero Image' # Hero Image
+    64376d7d-992a-4498-8887-6b6d3bcb36d8: 'Image Extra' # Image Extra
+    548730d6-8c6c-48bf-8ead-2ea64fb63952: 'Description Large' # Description Large
+    802276ea-8ed7-4724-b631-5b8ee98b5d7b: 'Description Extra' # Description Extra
+    77794871-ef42-43aa-b020-16cc59c7a8a2: 'Products Page' # Products Page
+    a79f21c3-a954-495d-8f94-8b6fc88377b7: 'Page Subtitle' # Page Subtitle
+    ae6b26e1-b817-41a9-89ca-0de5e4d3cc5b: 'Product Categories' # Product Categories
+    ae793556-b602-4d72-89b3-113498ec50ee: 'Product Description' # Product Description
+    b186655c-2d7c-4ee5-adbf-e987913ef15f: 'Product Content' # Product Content
+    bbdd2418-0f9f-45ab-b477-bd4f526be57e: 'Section Subtitle' # Section Subtitle
+    bfa74cfc-5409-45e2-9828-99f7d84b23ab: Image # Image
+    c8882d7d-4c84-40d3-a270-4653a2dfec91: auro-craft # auro-craft
+    dc19075c-155d-4afa-a469-d86a7c73a291: Homepage-Entry # Homepage-Entry
+    e9e9574c-6003-4787-bbeb-3bea46f8229a: Text # Text
+    e382f540-6622-4500-804d-034bf966905c: SectionTitle # SectionTitle
+    ecf08738-def7-40fb-92d9-f458d6926431: 'Header Button' # Header Button
+    f63ac959-50e1-4e52-81ef-0fa2fe27393b: About-page # About-page
+system:
+  edition: solo
+  live: true
+  name: auro-craft
+  schemaVersion: 5.0.0.20
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  require2fa: false
+  requireEmailVerification: true

@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 179ce946-08aa-45b3-9c13-29121aeb7a21 # ProductPage Entry
+handle: productsPage
+maxAuthors: 1
+name: 'Products Page'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  c8882d7d-4c84-40d3-a270-4653a2dfec91: # auro-craft
+    enabledByDefault: true
+    hasUrls: true
+    template: products/index.twig
+    uriFormat: products
+type: single

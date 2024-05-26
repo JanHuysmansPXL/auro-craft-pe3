@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: headerButton
+instructions: 'Add button text here.'
+name: 'Header Button'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 40
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: Explore
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

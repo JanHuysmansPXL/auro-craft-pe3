@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: descriptionLarge
+instructions: 'add text test'
+name: 'Description Large'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 240
+  code: false
+  initialRows: 6
+  multiline: true
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

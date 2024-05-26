@@ -1,0 +1,131 @@
+color: blue
+fieldLayouts:
+  66d698dd-0667-45bc-84bc-ade8540432ab:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 7d15aeef-6c5e-4938-9dc8-01b64f3a0072
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: e382f540-6622-4500-804d-034bf966905c # SectionTitle
+            handle: sectionTitle
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 33714264-37f1-4d11-8146-0c9b9f7a3100
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 485aa77d-cdbd-41f9-b327-610c6c182c10 # Section Bodytext
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 16385373-7625-4c59-8abe-77d2d8e1499f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 485aa77d-cdbd-41f9-b327-610c6c182c10 # Section Bodytext
+            handle: sectionBodytext2
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 769a33e1-8ef9-4d15-a0bc-283e3a5a9174
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: bfa74cfc-5409-45e2-9828-99f7d84b23ab # Image
+            handle: aboutImage
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 556a8c04-959e-4bd6-b2f6-dae5328223dd
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 1a9b2851-69bb-421b-9d03-fecf3d85ba3f
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: e382f540-6622-4500-804d-034bf966905c # SectionTitle
+            handle: formTitle
+            includeInCards: false
+            instructions: 'Add the title for the form.'
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fcd155fa-870e-402c-be22-8ffed8287ea8
+            userCondition: null
+            warning: null
+            width: 50
+        name: 'Form Field'
+        uid: ef591b12-6ee8-400d-bf49-1b7b1719dc33
+        userCondition: null
+handle: aboutPage
+hasTitleField: true
+icon: circle-info
+name: About-page
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

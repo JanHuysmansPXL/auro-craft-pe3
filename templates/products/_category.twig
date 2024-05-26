@@ -1,0 +1,26 @@
+{% extends '_index' %}
+
+{% set productEntries = craft.entries().section('products').productCategories(category).all() %}
+
+{% block content %}
+  <h1 class="txt-light txt-heading_lg">Category - {{ category.title }}</h1>
+
+  {% for product in productEntries %}
+    {% set image = product.productImage.one() %}
+
+    <article>
+      {% if image %}
+        <div class="thumbnail">
+          {{ image.getImg() }}
+        </div>
+      {% endif %}
+
+      <h2 class="txt-light txt-heading_lg">{{ product.title }}</h2>
+      <time class="txt-light txt-body_md" datetime="{{ product.postDate | atom }}">{{ product.postDate | date }}</time>
+
+      {{ product.descriptionLarge | md }}
+      <a class="txt-light txt-body_md" href="{{ product.url }}">Discover more</a>
+
+    </article>
+  {% endfor %}
+{% endblock %}
