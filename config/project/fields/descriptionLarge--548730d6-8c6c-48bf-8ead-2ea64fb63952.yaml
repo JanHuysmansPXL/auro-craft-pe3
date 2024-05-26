@@ -5,7 +5,7 @@ name: 'Description Large'
 searchable: false
 settings:
   byteLimit: null
-  charLimit: 240
+  charLimit: 540
   code: false
   initialRows: 6
   multiline: true

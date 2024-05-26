@@ -1,14 +1,17 @@
 {% extends '_index' %}
 
 {% block content %}
+  {# DIT IS DE NAVBAR #}
+  {% include "_snippets/_navbar.twig" %}
 
 {% set productImage = entry.productImage.one() %}
 {% set categories = entry.productCategories.all() %}
 
 {% set productContent = entry.productContent.all() %}
 
-  <h1 class="txt-white txt-heading_md">{{ entry.headingTitle }}</h1>
-  <h1 class="txt-white txt-subheader">{{ entry.headingSubtitle }}</h1>
+  <h1 class="txt-white txt-heading_lg pt-xl">THIS IS AN _entry.twig TEMPLATE -- PRODUCT PAGE </h1>
+
+  <h1 class="txt-white txt-heading_md">Post Date: {{ entry.headingTitle }}</h1>
 
   <time class="txt-white txt-heading_md"  datetime="{{ entry.postDate | atom }}">
     {{ entry.postDate | date }}
@@ -17,23 +20,105 @@
   {% if categories | length %}
     <ul class="categories link">
       {% for category in categories %}
-        <li class="txt-white txt-heading_md" >{{ category.getLink() }}</li>
+        <li class="txt-white txt-heading_md" >Category: {{ category.getLink() }}</li>
       {% endfor %}
     </ul>
   {% endif %}
 
+{# TEMP AWAY - USE FOR IMAGE OVERLAY OF PRODUCTS PAGE MAIN.
   <div class="container-fluid">
       <div class="card">
           <div class="card-overlay">
+              
               <h1 class="card-overlay-heading txt-light">{{ entry.title }}</h1>
               <p class="card-overlay-paragraph txt-light">{{ entry.productDescription }}</p>
               <a type="button" class="card-overlay-button" href="product_detail.html">Order now</a>
           </div>
-            {# Output the image, if one was found: #}
+            Output the image, if one was found:
             {% if productImage %}
                   <img class="card-image" src={{ productImage.url }} alt= {{ productImage.title }}>
             {% endif %}
       </div>       
+  </div> #}
+
+
+<!-- PRODUCT DETAILS -->
+  <div class="container-fluid product-detail-page bg-darkest">
+
+    <!-- Linkerkolom met productafbeelding en overlay -->
+    <div class="product-image">
+      <div class="image-overlay">
+        <p class="overlaytxt_sm">{{ entry.productDescription }}</p>
+        <p class="overlaytxt_sm">{{ entry.productDescription }}</p>
+        </div>
+          {% if productImage %}
+            <img class="card-image" src={{ productImage.url }} alt= {{ productImage.title }}>
+          {% endif %}      
+        <a href="#" class="toggle-overlay"><i class="fa fa-plus-circle info-toggle"></i>️</a>
+    </div>
+
+    <!-- Rechterkolom met productinformatie -->
+    <div class="product-info">
+      <h1 class="info-heading">{{ entry.title }}</h1>
+      <p class="info-subheading">{{ entry.productDescription }}</p>
+      <p class="infotxt_lg mt-md mb-md">€ {{ entry.price }}</p>
+      <p class="infotxt_sm"><span class="infotxt_strong">Availability:</span> In stock. --hardcoded</p>
+      <p class="infotxt_sm"><span class="infotxt_strong">Ratings: --hardcoded</span>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </p>
+      <a href="#" class="cart-button mt-lg">Add to cart</a>
+    </div>
+  </div>
+
+  <div class="container bg-darkest tech-specs">
+    <div class="line mb-sm"></div>
+    <div class="container-fluid specs-wrapper">
+      <div class="specs-left">
+
+        {% for contentBlock in productContent %}
+          {# Memoize the block type’s handle so we can use it later: #}
+          {% set blockType = contentBlock.type.handle %}
+
+          {# Switch what is displayed based on the `type`: #}
+          {% if blockType == 'descriptionExtra' %}
+            <div class="content-block text-light txt_body_xl ">
+              {{ contentBlock.descriptionLarge | md }}
+            </div>
+          {% elseif blockType == 'imageExtra' %}
+            {% set image = contentBlock.productImage.one() %}
+
+            <div class="content-block imageExtra">
+              {{ image.getImg() }}
+            </div>
+          {% else %}
+            <div class="content-block unsupported">
+              <p>Unsupported block type: <code>{{ blockType }}</code></p>
+            </div>
+          {% endif %}
+        {% else %}
+          {# `for` tags also support an `else` block for when there’s no content! #}
+          <div class="content-block empty">
+            <p class="txt-white txt-heading_md">This products has no specs avaialble, sorry.</p>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="specs-right">
+        <p class="txt-heading_md mt-sm mb-md"><span class="infotxt_strong">Technical Specs:</span></p>
+        <ul class="product-info-list">
+          <li class="infotxt_sm"><i class="fas fa-stream"></i>Bone conduction --hardcoded</li>
+          <li class="infotxt_sm"><i class="fab fa-bluetooth-b"></i> Bluetooth 5.0 --hardcoded</li>
+          <li class="infotxt_sm"><i class="fas fa-battery-full"></i>Battery Life: 24h --hardcoded</li>
+          <li class="infotxt_sm"><i class="fas fa-volume-up"></i>Active Noise Cancelling --hardcoded</li>
+          <li class="infotxt_sm"><i class="fas fa-mobile-alt"></i>Compatibility: Smartphone, tablet, laptop --hardcoded</li>
+          <li class="infotxt_sm"><i class="fas fa-comment-dots"></i>Supported: Siri, Google Assistant, Alexa --hardcoded</li>
+        </ul>
+      </div>
+    </div>
+    <div class="line mt-lg"></div>
   </div>
 
 
@@ -41,33 +126,10 @@
 
   <div class="product-content">
 
-  {% for contentBlock in productContent %}
-    {# Memoize the block type’s handle so we can use it later: #}
-    {% set blockType = contentBlock.type.handle %}
-
-    {# Switch what is displayed based on the `type`: #}
-    {% if blockType == 'descriptionExtra' %}
-      <div class="content-block text-light txt_body_xl ">
-        {{ contentBlock.descriptionLarge | md }}
-      </div>
-    {% elseif blockType == 'imageExtra' %}
-      {% set image = contentBlock.productImage.one() %}
-
-      <div class="content-block imageExtra">
-        {{ image.getImg() }}
-      </div>
-    {% else %}
-      <div class="content-block unsupported">
-        <p>Unsupported block type: <code>{{ blockType }}</code></p>
-      </div>
-    {% endif %}
-  {% else %}
-    {# `for` tags also support an `else` block for when there’s no content! #}
-    <div class="content-block empty">
-      <p>This post has no content!</p>
-    </div>
-  {% endfor %}
 </div>
 
+
+  <!--DIT IS DE FOOTER-->
+{% include "_snippets/_footer.twig" %}
 {% endblock %}
 
