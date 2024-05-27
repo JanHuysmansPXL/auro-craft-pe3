@@ -1,10 +1,10 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - f63ac959-50e1-4e52-81ef-0fa2fe27393b # About-page
-handle: about
+  - f63ac959-50e1-4e52-81ef-0fa2fe27393b # Contact-page
+handle: contact
 maxAuthors: 1
-name: About
+name: Contact
 previewTargets:
   -
     __assoc__:
@@ -22,6 +22,6 @@ siteSettings:
   c8882d7d-4c84-40d3-a270-4653a2dfec91: # auro-craft
     enabledByDefault: true
     hasUrls: true
-    template: about-page.twig
-    uriFormat: about
+    template: contact-page.twig
+    uriFormat: contact
 type: single

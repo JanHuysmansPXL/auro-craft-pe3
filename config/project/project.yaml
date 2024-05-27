@@ -1,4 +1,4 @@
-dateModified: 1716765444
+dateModified: 1716770185
 email:
   fromEmail: 12201074@student.pxl.be
   fromName: auro-craft
@@ -16,7 +16,7 @@ meta:
     0e584376-73fd-4211-8da1-a084ab59ce9e: images # images
     2b50aeaf-630e-40de-9f85-5722be92682b: 'Product Card' # Product Card
     5a02cde0-dfc9-41dd-add9-0085fdf6478c: 'Product Entry' # Product Entry
-    5abaf36c-a1ba-4e67-805e-ab9b554f279d: About # About
+    5abaf36c-a1ba-4e67-805e-ab9b554f279d: Contact # Contact
     6bc3f43e-c5bd-4e4b-860b-61a47938c237: Homepage # Homepage
     6c9b1183-2e60-43fd-944e-8169ff86fa56: productbutton # productbutton
     6f357ba9-745d-43a5-b15d-a51e4210db0c: auro-craft # auro-craft
@@ -45,7 +45,7 @@ meta:
     e9e9574c-6003-4787-bbeb-3bea46f8229a: Text # Text
     e382f540-6622-4500-804d-034bf966905c: SectionTitle # SectionTitle
     ecf08738-def7-40fb-92d9-f458d6926431: 'Header Button' # Header Button
-    f63ac959-50e1-4e52-81ef-0fa2fe27393b: About-page # About-page
+    f63ac959-50e1-4e52-81ef-0fa2fe27393b: Contact-page # Contact-page
 system:
   edition: solo
   live: true

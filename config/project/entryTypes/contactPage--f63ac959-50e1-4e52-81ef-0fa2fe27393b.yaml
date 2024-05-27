@@ -82,9 +82,9 @@ fieldLayouts:
           -
             elementCondition: null
             fieldUid: bfa74cfc-5409-45e2-9828-99f7d84b23ab # Image
-            handle: aboutImage
+            handle: contactImage
             includeInCards: false
-            instructions: null
+            instructions: 'Add an image for the contact page.'
             label: null
             providesThumbs: false
             required: false
@@ -118,10 +118,10 @@ fieldLayouts:
         name: 'Form Field'
         uid: ef591b12-6ee8-400d-bf49-1b7b1719dc33
         userCondition: null
-handle: aboutPage
+handle: contactPage
 hasTitleField: true
 icon: circle-info
-name: About-page
+name: Contact-page
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
