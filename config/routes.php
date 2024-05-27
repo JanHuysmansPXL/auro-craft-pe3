@@ -10,5 +10,6 @@
  */
 
 return [    
-    'products' => 'products/index'
+    'products' => 'products/index',
+    'contact' => 'contact'
 ];

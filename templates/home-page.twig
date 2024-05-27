@@ -47,8 +47,10 @@
 Filteren producten via order by / limit:
 {% set products = craft.entries.section('products').orderBy('price DESC').limit(3).all() %} #}
 
-<h2>Head into the future. Wear AURO.</h2>
-<h4>Discover our popular products:</h4>
+<div class="container-fluid">
+    <h2 class="txt-light txt-heading_lg" >Head into the future. Wear AURO.</h2>
+    <h4 class="txt-light txt-heading_md">Discover our popular products:</h4>
+</div>
 
 <div class="gallery">
 {% set products = craft.entries.section('products').orderBy('price asc').limit(4) %}
@@ -71,6 +73,7 @@ Filteren producten via order by / limit:
 {% endif %}
 </div>
 
+<!--
 {% if products|length %}
     <section class="cards-wrapper bg-white">
         {% for product in products %}
@@ -78,7 +81,7 @@ Filteren producten via order by / limit:
         {% endfor %}
     </section>
 {% endif %}
-</div>
+</div> -->
 
 {% include "_snippets/_footer.twig" %}
 
