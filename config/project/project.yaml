@@ -1,4 +1,4 @@
-dateModified: 1716770185
+dateModified: 1716802509
 email:
   fromEmail: 12201074@student.pxl.be
   fromName: auro-craft
@@ -46,6 +46,11 @@ meta:
     e382f540-6622-4500-804d-034bf966905c: SectionTitle # SectionTitle
     ecf08738-def7-40fb-92d9-f458d6926431: 'Header Button' # Header Button
     f63ac959-50e1-4e52-81ef-0fa2fe27393b: Contact-page # Contact-page
+plugins:
+  freeform:
+    edition: express
+    enabled: true
+    schemaVersion: 5.1.0
 system:
   edition: solo
   live: true
