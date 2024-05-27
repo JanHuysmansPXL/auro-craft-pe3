@@ -14,11 +14,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@100;200;300;400;500;700;900&display=swap" rel="stylesheet">
 
-    {# COUPLING STYLESHEET -- ADDED THIS TO LINK FRONTEND CSS AS A URL TO TWIG
-    <link rel="stylesheet" href="{{siteUrl}}css/main.css">  #}
+    {# COUPLING STYLESHEET -- ADDED THIS TO LINK FRONTEND CSS AS A URL TO TWIG #}
+    <link rel="stylesheet" href="{{siteUrl}}css/main.css">
     {% do craft.app.view.registerCssFile('@web/frontend/css/main.css') %}
 </head>
 <body class="bg-darkest ps-md mt-md">
+{% hook 'after-body-start' %}
 
 {#
 <div>

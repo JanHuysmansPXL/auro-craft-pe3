@@ -941,7 +941,7 @@
 }
 
 .login-form {
-  height: min-content;
+  height: auto;
   width: 400px;
   background-color: rgba(255, 62, 246, 0.05);
   position: absolute;
@@ -1030,7 +1030,7 @@
 
 @media (min-width: 320px) and (max-width: 768px) {
   .login-form {
-    height: min-content;
+    height: auto;
     width: 320px;
   }
 }

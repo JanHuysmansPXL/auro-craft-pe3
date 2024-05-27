@@ -1,0 +1,9 @@
+baseUrl: '@baseUrlNL'
+enabled: '1'
+handle: auroCraftNederlands
+hasUrls: true
+language: nl-BE
+name: 'Auro Craft - Nederlands'
+primary: false
+siteGroup: 6f357ba9-745d-43a5-b15d-a51e4210db0c # auro-craft
+sortOrder: 2

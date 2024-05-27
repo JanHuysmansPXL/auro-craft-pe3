@@ -19,6 +19,11 @@ previewTargets:
         - '1'
 propagationMethod: all
 siteSettings:
+  2b1f5981-d58e-4a2f-8225-ee102113ad97: # Auro Craft - Nederlands
+    enabledByDefault: true
+    hasUrls: true
+    template: products/_entry.twig
+    uriFormat: 'products/{slug}'
   c8882d7d-4c84-40d3-a270-4653a2dfec91: # auro-craft
     enabledByDefault: true
     hasUrls: true

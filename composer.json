@@ -3,6 +3,7 @@
   "prefer-stable": true,
   "require": {
     "craftcms/cms": "^5.0.0",
+    "elleracompany/craft-cookie-consent": "5.0.1",
     "solspace/craft-freeform": "5.3.0",
     "vlucas/phpdotenv": "^5.4.0"
   },

@@ -23,5 +23,8 @@ return GeneralConfig::create()
     // Set the @webroot alias so the clear-caches command knows where to find CP resources
     ->aliases([
         '@webroot' => dirname(__DIR__) . '/web',
+        '@baseUrl' => App::env('PRIMARY_SITE_URL'),
+        '@baseUrlNL' => App::env('PRIMARY_SITE_URL') . '/nl',
+        '@baseUrlEN' => App::env('PRIMARY_SITE_URL') . '/en',
     ])
 ;

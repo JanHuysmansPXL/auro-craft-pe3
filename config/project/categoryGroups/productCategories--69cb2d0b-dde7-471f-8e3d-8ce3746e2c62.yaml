@@ -40,6 +40,10 @@ fieldLayouts:
 handle: productCategories
 name: 'Product Categories'
 siteSettings:
+  2b1f5981-d58e-4a2f-8225-ee102113ad97: # Auro Craft - Nederlands
+    hasUrls: true
+    template: products/_category.twig
+    uriFormat: 'products/categories/{slug}'
   c8882d7d-4c84-40d3-a270-4653a2dfec91: # auro-craft
     hasUrls: true
     template: products/_category.twig
