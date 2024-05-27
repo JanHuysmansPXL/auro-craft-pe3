@@ -96,9 +96,10 @@
 .showcase-socials li a:hover {
   transform: scale(0.5) translateY(-15px);
 }
-
-
-
+.filter-active a {
+  font-weight: 400;
+  color: hotpink; /* Example color */
+}
 
 /* TRANSITION TEXT / IMAGE BG */
 

@@ -856,6 +856,11 @@
   transform: scale(0.5) translateY(-15px);
 }
 
+.filter-active a {
+  font-weight: 400;
+  color: hotpink; /* Example color */
+}
+
 /* TRANSITION TEXT / IMAGE BG */
 .home-transition {
   width: 100%;
@@ -1177,7 +1182,12 @@
 }
 
 .pagination {
-  align-self: end;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-self: center;
+  justify-content: center;
+  flex-grow: 3;
   font-family: "Red Hat Display", sans-serif;
   font-size: 1rem;
   font-weight: 300;
@@ -1185,18 +1195,28 @@
   justify-content: center;
   padding: 2rem;
 }
-.pagination .pagination-item {
-  margin: 0 5px;
+.pagination .pagination-link {
+  margin: 0 16px;
   padding: 8px 16px;
-  background-color: #0a0a0a;
-  color: rgb(243, 243, 243);
-  border: 1px solid rgb(243, 243, 243);
+  background-color: #0a0a0a !important;
+  color: rgb(243, 243, 243) !important;
+  border: none !important;
   border-radius: 2px;
-  text-decoration: none;
+  text-decoration: none !important;
   transition: background-color 0.3s ease;
 }
-.pagination .pagination-item:hover {
+.pagination .pagination-link:hover {
   background-color: #555;
+}
+.pagination .pagination-link.active {
+  background-color: rgb(243, 243, 243) !important;
+  color: #0a0a0a !important;
+}
+
+.pagination-warning {
+  color: rgb(243, 243, 243) !important;
+  text-align: center;
+  padding: 2rem;
 }
 
 @media (max-width: 768px) {

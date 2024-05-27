@@ -13,18 +13,39 @@
   <h3 class="txt-title_sm">{{ entry.headingSubtitle}}</h3>
 </section>
 
+{% set productCategories = craft.entries().section('products').productCategories.all() %}
+
+
 <!-- CONTAINER MET FILTERMENU EN PRODUCT-OVERZICHT  -->
 <div class="container-fluid products-wrapper bg-darkest mx-auto">
   <aside class="filter-menu">
     <h2 class="filter-title">Filter</h2>
     <ul class="filter-list">
       <li class="filter-listitem filter-active"><a class="filter-toggle" href="#">All</a></li>
+
+
       <li class="filter-listitem"><a class="filter-toggle" href="#">Auropods</a></li>
       <li class="filter-listitem"><a class="filter-toggle" href="#">AuroVision</a></li>
       <li class="filter-listitem"><a class="filter-toggle" href="#">AuroTouch</a></li>
       <li class="filter-listitem"><a class="filter-toggle" href="#">AuroLink</a></li>
     </ul>
   </aside>
+
+  {% if products|length %}
+	<section class="cards-wrapper bg-black">
+		{% for product in products %}
+        {% set image = product.productImage.one() %}
+        <div class="card">
+            <div class="card-overlay">
+                <h1 class="card-overlay-heading txt-light">{{ product.title }}</h1>
+                <p class="card-overlay-paragraph txt-light">{{ product.price }}</p>
+                <a type="button" class="card-overlay-button" href="{{ product.url }}">Order now</a>
+            </div>
+            <img class="card-image" src="{{ image.url }}" alt="{{ image.title }}">
+        </div>
+        {% endfor %}
+	</section>
+{% endif %}
 
 
   

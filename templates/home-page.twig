@@ -27,7 +27,7 @@
             <div class="showcase-text">
                 <h2 class="txt-heading_xl">{{entry.headingTitle}}</h2>
                 <p class="txt-body_md">{{entry.headingSubtitle}}</p>
-                <a class="showcase-button" href="products.html">{{entry.headerButton}}</a>
+                <a class="showcase-button" href="{{ url('products') }}">{{entry.headerButton}}</a>
             </div>
         </div>
     </section>
@@ -64,7 +64,7 @@ Filteren producten via order by / limit:
             <div class="card-overlay">
                 <h1 class="card-overlay-heading txt-light">{{ product.title }}</h1>
                 <p class="card-overlay-paragraph txt-light">{{ product.price }}</p>
-                <a type="button" class="card-overlay-button" href="#">Order now</a>
+                <a type="button" class="card-overlay-button" href="{{ product.url }}">Order now</a>
             </div>
             <img class="card-image" src="{{ image.url }}" alt="{{ image.title }}">
         </div>

@@ -1,6 +1,24 @@
 {% extends '_index' %}
 
-{% set products = craft.entries.section('products').all() %}
+{% set selectedCategory = craft.app.request.getParam('category') %}
+{% set query = craft.entries.section('products') %}
+
+{% if selectedCategory %}
+  {% set category = craft.categories.id(selectedCategory).one() %}
+  {% if category %}
+    {% set query = query.relatedTo(category) %}
+  {% endif %}
+{% endif %}
+
+{% set productCategories = craft.categories.group('productCategories').all() %}
+
+{# Paginatie setup #}
+{% set defaultPageNumber = 1 %}
+{% set pageNumber = craft.app.request.getParam('page')|default(defaultPageNumber) %}
+{% set pageSize = 6 %} {# AANTAL ITEMS PER PAGINA #}
+{% set offset = (pageNumber - 1) * pageSize %}
+{% set products = query.limit(pageSize).offset(offset).all() %}
+{% set totalProducts = query.count() %} {# Move totalProducts calculation here #}
 
 {% block content %}
 
@@ -9,58 +27,72 @@
 
   <section class="gallery_header bg-darkest mt-xl">
     <h2 class="txt-body_md">{{ entry.headingTitle }}.<br></h2>
-    <h3 class="txt-title_sm">{{ entry.headingSubtitle}}</h3>
+    <h3 class="txt-title_sm">{{ entry.headingSubtitle }}</h3>
   </section>
 
+  <!-- CONTAINER MET FILTERMENU EN PRODUCT-OVERZICHT  -->
+  <div class="container-fluid products-wrapper bg-darkest mx-auto">
 
-   <!-- CONTAINER MET FILTERMENU EN PRODUCT-OVERZICHT  -->
-<div class="container-fluid products-wrapper bg-darkest mx-auto">
-
-<!-- LEFT SIDE WITH FILTERS -->
-  <aside class="filter-menu">
-    <h2 class="filter-title">Filter</h2>
-    <ul class="filter-list">
-      <li class="filter-listitem filter-active"><a class="filter-toggle" href="#">All</a></li>
-      <li class="filter-listitem"><a class="filter-toggle" href="#">Auropods</a></li>
-      <li class="filter-listitem"><a class="filter-toggle" href="#">AuroVision</a></li>
-      <li class="filter-listitem"><a class="filter-toggle" href="#">AuroTouch</a></li>
-      <li class="filter-listitem"><a class="filter-toggle" href="#">AuroLink</a></li>
-    </ul>
-  </aside>
-
-<!-- RIGHT SIDE WITH PRODUCTS -->
-  <main class="product-list">
-    <!-- Voeg meer productkaarten toe -->
-    {% if products|length %}
-      {% for product in products %}
-       {% set image = product.productImage.one() %}
-        <div class="product-card">
-         {% if image %}
-            <div class="thumbnail">
-              <img src="{{ image.url }}" alt="{{ image.title }}">
-              <p class="txt-lightpink txt-body_md" >{{ product.productDescription }}</p>
-      <!--        <time class="txt-light txt-body_md" datetime="{{ product.postDate | atom }}">{{ product.postDate | date }}</time> -->
-            </div>
-          {% endif %}
-       <!--  <img src="assets/images/gallery_4.png" alt="Product 1 - Nubis"> -->
-          <div class="card-info">
-            <div class="card-txt">
-              <h3 class="product-name">{{ product.title }}</h3>
-              <p class="product-price">€ {{ product.price }}</p>
-            </div>
-            <a href="{{ product.url }}" class="details-button">Details</a>   
-          </div>
-        </div>
+    <!-- LEFT SIDE WITH FILTERS -->
+    <aside class="filter-menu">
+      <h2 class="filter-title">Filter</h2>
+      <ul class="filter-list">
+        <li class="filter-listitem {% if not selectedCategory %}filter-active{% endif %}">
+          <a class="filter-toggle" href="?category=">All</a>
+        </li>
+        {% for category in productCategories %}
+          <li class="filter-listitem {% if category.id == selectedCategory %}filter-active{% endif %}">
+            <a class="filter-toggle" href="?category={{ category.id }}">{{ category.title }}</a>
+          </li>
         {% endfor %}
-    {% else %}
-      <p>No products found.</p>
-    {% endif %}
-  </main> 
+      </ul>
+    </aside>
 
-  <!--EINDE GALLERY DIV !-->
-</div>
+    <!-- RIGHT SIDE WITH PRODUCTS -->
+    <main class="product-list">
+      {% if products|length %}
+        {% for product in products %}
+          {% set image = product.productImage.one() %}
+          <div class="product-card">
+            {% if image %}
+              <div class="thumbnail">
+                <img src="{{ image.url }}" alt="{{ image.title }}">
+                <p class="txt-lightpink txt-body_md">{{ product.productDescription }}</p>
+              </div>
+            {% endif %}
+            <div class="card-info">
+              <div class="card-txt">
+                <h3 class="product-name">{{ product.title }}</h3>
+                <p class="product-price">€ {{ product.price }}</p>
+              </div>
+              <a href="{{ product.url }}" class="details-button">Details</a>
+            </div>
+          </div>
+        {% endfor %}
+    </main>
+  </div>
 
-  <!--DIT IS DE FOOTER-->
-{% include "_snippets/_footer.twig" %}
+  <div class="container-fluid">
+    <div class="container-fluid pagination">
+      {% if pageNumber > 1 %}
+        <a class="pagination-link txt-light me-xs" href="?page={{ pageNumber - 1 }}">Previous</a>
+      {% endif %}
+
+      {% for page in 1..ceil(totalProducts / pageSize) %}
+        <a class="pagination-link txt-light me-xs {% if page == pageNumber %}active{% endif %}" href="?page={{ page }}">{{ page }}</a>
+      {% endfor %}
+
+      {% if pageNumber < ceil(totalProducts / pageSize) %}
+        <a class="pagination-link txt-light" href="?page={{ pageNumber + 1 }}">Next</a>
+      {% endif %}
+    </div>
+
+  {% else %}
+    <p class="pagination-warning txt-light me-xs">No products found.</p>
+  {% endif %}
+  </div>
+
+  <!-- DIT IS DE FOOTER -->
+  {% include "_snippets/_footer.twig" %}
 
 {% endblock %}

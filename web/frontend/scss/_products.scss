@@ -146,26 +146,44 @@
 }
 
 .pagination {
-  align-self: end;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-self: center;
+  justify-content: center;
+  flex-grow: 3;
   font-family: $font-redhat-display;
   font-size: $fs-sm;
   font-weight: 300;
   display: flex;
   justify-content: center;
   padding: $padding-md;
-  .pagination-item {
-    margin: 0 5px;
+
+  .pagination-link {
+    margin: 0 16px;
     padding: 8px 16px;
-    background-color: $color-darkest;
-    color: $color-light;
-    border: 1px solid $color-light;
+    background-color: $color-darkest !important;
+    color: $color-light !important;
+    border: none !important;
     border-radius: 2px;
-    text-decoration: none;
+    text-decoration: none !important;
     transition: background-color 0.3s ease;
+    
     &:hover {
       background-color: #555;
     }
+
+    &.active {
+      background-color: $color-light !important;
+      color: $color-darkest !important;
+    }
   }
+}
+
+.pagination-warning {
+  color: $color-light !important;
+  text-align: center;
+  padding: $padding-md;
 }
 
 // ON SMALLER SCREENS:
