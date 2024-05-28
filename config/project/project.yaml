@@ -1,4 +1,4 @@
-dateModified: 1716915780
+dateModified: 1716922156
 email:
   fromEmail: 12201074@student.pxl.be
   fromName: auro-craft
@@ -59,6 +59,7 @@ meta:
     bc7b29f5-8dba-4420-9931-72f02ce72723: 'Page with Blocks' # Page with Blocks
     bfa74cfc-5409-45e2-9828-99f7d84b23ab: Image # Image
     c8882d7d-4c84-40d3-a270-4653a2dfec91: auro-craft # auro-craft
+    d02a9b80-4829-49f9-891d-b73b58fe638d: MyUserBase # MyUserBase
     dc19075c-155d-4afa-a469-d86a7c73a291: Homepage-Entry # Homepage-Entry
     e9e9574c-6003-4787-bbeb-3bea46f8229a: Text # Text
     e87a3d46-d999-435b-bb79-ed28973de98a: 'Social Links' # Social Links
@@ -78,15 +79,8 @@ plugins:
     enabled: true
     schemaVersion: 5.1.0
 system:
-  edition: solo
+  edition: pro
   live: true
   name: auro-craft
   schemaVersion: 5.0.0.20
   timeZone: America/Los_Angeles
-users:
-  allowPublicRegistration: false
-  defaultGroup: null
-  photoSubpath: null
-  photoVolumeUid: null
-  require2fa: false
-  requireEmailVerification: true
