@@ -1,0 +1,110 @@
+color: pink
+fieldLayouts:
+  6085fa04-22bc-4b78-bbb0-9fe2a1a69586:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 429c43a9-b65c-4d9f-898a-320049834f44
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 818b0433-7a51-4cd8-96f4-2022cffcc1f7 # Heading Title
+            handle: brandTitle
+            includeInCards: false
+            instructions: 'Add the brand name or title'
+            label: 'Brand Title'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 15aa0d7b-ed1e-471b-ba3e-960fad5d5a6b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 818b0433-7a51-4cd8-96f4-2022cffcc1f7 # Heading Title
+            handle: brandSubtitle
+            includeInCards: false
+            instructions: 'Add the footer catchline here'
+            label: 'Brand Subtitle'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 670d713e-b3c0-4ad8-937c-d529327b3d83
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a79f21c3-a954-495d-8f94-8b6fc88377b7 # Page Subtitle
+            handle: addressInvite
+            includeInCards: false
+            instructions: 'Add an invite message'
+            label: 'Adress Invite'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 831a3257-a5ca-42cb-b929-b3ace3610e1c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a79f21c3-a954-495d-8f94-8b6fc88377b7 # Page Subtitle
+            handle: copyrightText
+            includeInCards: false
+            instructions: 'Add the copyright text here.'
+            label: Copyright
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 02436595-3cd9-4d0a-9c50-24f2fd5c6be2
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 82691a26-ac45-45ff-99a6-de8539c1d4a6
+        userCondition: null
+handle: footercontent
+hasTitleField: true
+icon: arrow-down
+name: footerContent
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: ''
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: ''
+titleTranslationMethod: site

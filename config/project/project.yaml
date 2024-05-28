@@ -1,4 +1,4 @@
-dateModified: 1716892504
+dateModified: 1716899202
 email:
   fromEmail: 12201074@student.pxl.be
   fromName: auro-craft
@@ -16,18 +16,25 @@ meta:
     0e584376-73fd-4211-8da1-a084ab59ce9e: images # images
     2b1f5981-d58e-4a2f-8225-ee102113ad97: 'Auro Craft - Nederlands' # Auro Craft - Nederlands
     2b50aeaf-630e-40de-9f85-5722be92682b: 'Product Card' # Product Card
+    4ef124f9-4492-4355-bdee-0d09f9ff66ee: footerContent # footerContent
     5a02cde0-dfc9-41dd-add9-0085fdf6478c: 'Product Entry' # Product Entry
     5abaf36c-a1ba-4e67-805e-ab9b554f279d: Contact # Contact
     5fc80de7-1d18-4d36-b0bb-19500ed234d0: Stock # Stock
     6bc3f43e-c5bd-4e4b-860b-61a47938c237: Homepage # Homepage
     6c9b1183-2e60-43fd-944e-8169ff86fa56: 'Productcard - Button Text' # Productcard - Button Text
+    6d577da7-3d42-4ef2-bf5d-03cb908a5352: AddressInfo # AddressInfo
     6f357ba9-745d-43a5-b15d-a51e4210db0c: auro-craft # auro-craft
+    09bf03b0-9b61-47ee-b078-f8a099b7b5e0: 'Navbar Content' # Navbar Content
     9dbbf173-7317-4124-a03d-dabbe8564bfb: 'Product Rating' # Product Rating
     42db3d65-1575-49e2-bd36-9c432e8d400b: 'Public Schema' # Public Schema
+    48dead7f-462e-4dbb-b3fd-6f350bebe474: Navbar # Navbar
+    49fade99-c7c8-477b-a9d3-881c8d99d1b0: 'Social Link' # Social Link
     69cb2d0b-dde7-471f-8e3d-8ce3746e2c62: 'Product Categories' # Product Categories
+    85dfc3a4-6078-4b40-8343-342993c4bb48: 'Address line' # Address line
     98c3dc06-93d3-4762-a012-2f5e3e528199: Price # Price
     0171bf2f-ea8c-4569-aceb-c711956ef63e: Products # Products
     179ce946-08aa-45b3-9c13-29121aeb7a21: 'ProductPage Entry' # ProductPage Entry
+    219da0e2-0df2-48c5-ba10-b7854367246b: Footer # Footer
     291a5e20-cc3e-4d3b-9ea6-acfd998fb2ae: 'Product Image' # Product Image
     485aa77d-cdbd-41f9-b327-610c6c182c10: 'Section Bodytext' # Section Bodytext
     818b0433-7a51-4cd8-96f4-2022cffcc1f7: 'Heading Title' # Heading Title
@@ -45,8 +52,9 @@ meta:
     c8882d7d-4c84-40d3-a270-4653a2dfec91: auro-craft # auro-craft
     dc19075c-155d-4afa-a469-d86a7c73a291: Homepage-Entry # Homepage-Entry
     e9e9574c-6003-4787-bbeb-3bea46f8229a: Text # Text
+    e87a3d46-d999-435b-bb79-ed28973de98a: 'Social Links' # Social Links
     e382f540-6622-4500-804d-034bf966905c: SectionTitle # SectionTitle
-    ecf08738-def7-40fb-92d9-f458d6926431: 'Header Button' # Header Button
+    ecf08738-def7-40fb-92d9-f458d6926431: 'Login Button' # Login Button
     f63ac959-50e1-4e52-81ef-0fa2fe27393b: Contact-page # Contact-page
 plugins:
   cookie-consent:

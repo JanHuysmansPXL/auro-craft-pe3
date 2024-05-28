@@ -1,22 +1,56 @@
 {% block content %}
     {# FIXED FOOTER. #}
-    <footer class="footer bg-darkest">
-    <div class="footer-header">
-        <div>
-            <h1 class="brand-title">AURO</h1>
-            <p class="brand-subtitle">Feel the future.</p>
-        </div>
-    </div>
-    <div class="footer-social-media">
-        <ul class="social-media">
-            <li class="social-media-item"><a href="#" class="social-media-link"><i class="fab fa-facebook-square"></i></a></li>
-            <li class="social-media-item"><a href="#" class="social-media-link"><i class="fab fa-instagram"></i></a></li>
-            <li class="social-media-item"><a href="#" class="social-media-link"><i class="fab fa-youtube"></i></a></li>
-            <li class="social-media-item"><a href="#" class="social-media-link"><i class="fab fa-snapchat"></i></a></li>
-        </ul>
-    </div>
-    <div class="footer-copyright">
-        <p class="footer-copyright-paragraph">&copy; AURO // All rights reserved.</p>
-    </div>
-</footer>
+
+    {% set footer = craft.entries.section('footer').one() %}
+
+<div class="footer container-fluid">
+	<div class="footer-left bg-darkest">
+		<div class="footer-header">
+			<div>
+				<p class="brand-subtitle">{{ footer.brandSubtitle }}</p>
+			</div>
+		</div>
+		<div class="footer-social-media">
+			<ul class="social-media">
+				<li class="social-media-item">
+					<a href="{{ socialLinks.facebook }}" class="social-media-link">
+						<i class="fab fa-facebook-square"></i>
+					</a>
+				</li>
+				<li class="social-media-item">
+					<a href="{{ socialLinks.instagram }}" class="social-media-link">
+						<i class="fab fa-instagram"></i>
+					</a>
+				</li>
+				<li class="social-media-item">
+					<a href="{{ socialLinks.youtube }}" class="social-media-link">
+						<i class="fab fa-youtube"></i>
+					</a>
+				</li>
+				<li class="social-media-item">
+					<a href="{{ socialLinks.snapchat }}" class="social-media-link">
+						<i class="fab fa-snapchat"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="footer-right bg-darkest">
+		<div class="footer-header">
+            <h1 class="brand-title-sm mb-sm">{{ footer.brandTitle }}</h1>
+		</div>
+		<div class="footer-address">
+            <h4 class="txt-heading_md">{{ footer.addressInvite }}</h4>
+            <p class="footer-address-item">{{ addressinfo.streetNr }}</p>
+            <p class="footer-address-item">{{ addressinfo.postalCode }} {{ addressinfo.city }} Hasselt</p>
+            <p class="footer-address-item">{{ addressinfo.country }}</p>
+		</div>
+	</div>
+
+</div>
+ <div class="footer-copyright">
+        <p class="footer-copyright-paragraph">{{ footer.copyrightText }}</p>
+</div>
+
 {% endblock %}

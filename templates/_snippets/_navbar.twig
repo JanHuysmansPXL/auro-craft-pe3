@@ -1,14 +1,17 @@
 {% block content %}
 {# DIT IS HET BEGIN VAN DE BLOCK #}
+
+    {% set navbar = craft.entries.section('navbar').one() %}
+
     {# NAVBAR TOP #}
     <nav class="navbar bg-darkest container-fluid">
-        <div class="navbar-brand"><a class="brand-link" href="{{ siteUrl }}">AURO</a></div>
+        <div class="navbar-brand"><a class="brand-link" href="{{ siteUrl }}">{{ navbar.brandTitle }}</a></div>
         <div class="navbar-links">
             <ul class="navbar-list">
-                <li class="navbar-listitem"><a href="{{ url('products') }}" class="navbar-link">Products</a></li>
-                <li class="navbar-listitem"><a href="#" class="navbar-link">Cart</a></li>
-                <li class="navbar-listitem"><a href="{{ url('contact') }}" class="navbar-link">Contact</a></li>
-                <li class="navbar-listitem"><a href="#" class="login-button"><i class="fas fa-user-circle"></i> Login</a></li>
+                <li class="navbar-listitem"><a href="{{ url('products') }}" class="navbar-link">{{ navbar.productsLink }}</a></li>
+                <li class="navbar-listitem"><a href="#" class="navbar-link">{{ navbar.cartLink }}</a></li>
+                <li class="navbar-listitem"><a href="{{ url('contact') }}" class="navbar-link">{{ navbar.contactLink }}</a></li>
+                <li class="navbar-listitem"><a href="#" class="login-button"><i class="fas fa-user-circle"></i> {{ navbar.loginButton }}</a></li>
             </ul>
         </div>
     </nav>

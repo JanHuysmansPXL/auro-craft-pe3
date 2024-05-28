@@ -1,15 +1,15 @@
 columnSuffix: null
-handle: headerButton
-instructions: 'Add button text here.'
-name: 'Login Button'
+handle: addressText
+instructions: 'Add an address line'
+name: 'Address line'
 searchable: false
 settings:
   byteLimit: null
-  charLimit: 40
+  charLimit: null
   code: false
   initialRows: 4
   multiline: false
-  placeholder: Explore
+  placeholder: null
   uiMode: normal
 translationKeyFormat: null
 translationMethod: none

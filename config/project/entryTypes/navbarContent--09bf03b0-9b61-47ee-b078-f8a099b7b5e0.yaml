@@ -1,6 +1,6 @@
-color: blue
+color: pink
 fieldLayouts:
-  a5343c8c-44d1-47d5-9a2b-96b1be1a8f07:
+  1e9e1028-a121-480d-b35a-19cc1927da9a:
     tabs:
       -
         elementCondition: null
@@ -15,8 +15,8 @@ fieldLayouts:
             id: null
             includeInCards: false
             inputType: null
-            instructions: 'Add a Pagetitle here.'
-            label: PageTitle
+            instructions: null
+            label: null
             max: null
             min: null
             name: null
@@ -30,128 +30,92 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: deaf09db-9223-4970-9712-8ccca416dbdd
+            uid: 279d6604-94a4-4f9a-b1fc-bbaa7b0a2758
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 818b0433-7a51-4cd8-96f4-2022cffcc1f7 # Heading Title
-            handle: null
+            fieldUid: e382f540-6622-4500-804d-034bf966905c # SectionTitle
+            handle: brandTitle
             includeInCards: false
-            instructions: null
-            label: null
+            instructions: 'Add the brand name title here'
+            label: 'Brand Title'
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 263fbf98-ba8a-4f8e-bb7b-e2e08aca00b2
+            uid: 7a5a96b8-d030-4231-8375-3e84789466de
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: a79f21c3-a954-495d-8f94-8b6fc88377b7 # Page Subtitle
-            handle: null
+            fieldUid: 85dfc3a4-6078-4b40-8343-342993c4bb48 # Address line
+            handle: productsLink
             includeInCards: false
-            instructions: null
-            label: null
+            instructions: 'Link to products'
+            label: 'Products Link'
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: e08bbf78-9bb1-44be-b376-d45b5bfbb69d
+            uid: b1dfa55f-8217-4405-a241-0e989ae99dfe
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 85dfc3a4-6078-4b40-8343-342993c4bb48 # Address line
+            handle: contactLink
+            includeInCards: false
+            instructions: 'Add the contact Link'
+            label: 'Contact Link'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d3195872-4f42-4e13-bf7e-d3be5406d3a4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 85dfc3a4-6078-4b40-8343-342993c4bb48 # Address line
+            handle: cartLink
+            includeInCards: false
+            instructions: 'Add the Cart link title'
+            label: 'Cart Link'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1dedea0d-673a-4458-97e0-21df986a74d7
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
             fieldUid: ecf08738-def7-40fb-92d9-f458d6926431 # Login Button
-            handle: null
+            handle: loginButton
             includeInCards: false
-            instructions: null
-            label: null
+            instructions: 'Add login button text'
+            label: LoginButton
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 2c51c280-0834-49fe-a749-5de226a54b57
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 3337ad6f-af9f-4439-817d-0586f687690a # Hero Image
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 15ab45dc-36e7-430e-b80f-495964d380be
+            uid: 2b4ee2b9-2f58-4d7a-9983-5881d1406942
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 18ce96ae-4177-430b-ad14-f2fc78551eb6
+        uid: ae67048d-23f6-4ea9-9fdc-b599d8dce708
         userCondition: null
-      -
-        elementCondition: null
-        elements:
-          -
-            elementCondition: null
-            fieldUid: e382f540-6622-4500-804d-034bf966905c # SectionTitle
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 621660cc-1f9f-4029-baf2-cc52766b4f97
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: bbdd2418-0f9f-45ab-b477-bd4f526be57e # Section Subtitle
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 3d688594-3bc4-4a17-a1c7-c8a87f23143c
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 485aa77d-cdbd-41f9-b327-610c6c182c10 # Section Bodytext
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: c8f559a0-91ec-4b5e-baf6-42e928360436
-            userCondition: null
-            warning: null
-            width: 100
-        name: 'Transition Text'
-        uid: 3d1da41c-d87b-424e-b3a1-013a604eb437
-        userCondition: null
-handle: homepageEntry
+handle: navbarContent
 hasTitleField: true
-icon: house
-name: Homepage-Entry
+icon: arrow-up
+name: 'Navbar Content'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: ''

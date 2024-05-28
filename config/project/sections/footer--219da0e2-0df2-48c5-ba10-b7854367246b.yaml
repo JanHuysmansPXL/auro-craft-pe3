@@ -1,0 +1,32 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 4ef124f9-4492-4355-bdee-0d09f9ff66ee # footerContent
+handle: footer
+maxAuthors: 1
+name: Footer
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  2b1f5981-d58e-4a2f-8225-ee102113ad97: # Auro Craft - Nederlands
+    enabledByDefault: true
+    hasUrls: true
+    template: _snippets/_footer.twig
+    uriFormat: footer
+  c8882d7d-4c84-40d3-a270-4653a2dfec91: # auro-craft
+    enabledByDefault: true
+    hasUrls: true
+    template: _snippets/_footer.twig
+    uriFormat: footer
+type: single

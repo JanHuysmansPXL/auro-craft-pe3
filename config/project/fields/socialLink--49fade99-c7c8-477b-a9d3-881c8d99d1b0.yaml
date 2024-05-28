@@ -1,0 +1,12 @@
+columnSuffix: null
+handle: socialLink
+instructions: 'Add a social link'
+name: 'Social Link'
+searchable: true
+settings:
+  maxLength: 255
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

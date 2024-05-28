@@ -1,0 +1,32 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 09bf03b0-9b61-47ee-b078-f8a099b7b5e0 # Navbar Content
+handle: navbar
+maxAuthors: 1
+name: Navbar
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  2b1f5981-d58e-4a2f-8225-ee102113ad97: # Auro Craft - Nederlands
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+  c8882d7d-4c84-40d3-a270-4653a2dfec91: # auro-craft
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: single

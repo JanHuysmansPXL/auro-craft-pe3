@@ -1,0 +1,87 @@
+fieldLayouts:
+  720ddc64-4bcb-41ce-9331-d4b9013ef290:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 85dfc3a4-6078-4b40-8343-342993c4bb48 # Address line
+            handle: streetNr
+            includeInCards: false
+            instructions: null
+            label: 'Street + Nr'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 09d1b7b8-1b5c-4b23-adc3-ec5c99d80239
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 85dfc3a4-6078-4b40-8343-342993c4bb48 # Address line
+            handle: postalCode
+            includeInCards: false
+            instructions: 'Add postal Code'
+            label: 'Postal Code'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b569872e-66e6-45f5-b3e4-d63549b7688f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 85dfc3a4-6078-4b40-8343-342993c4bb48 # Address line
+            handle: city
+            includeInCards: false
+            instructions: null
+            label: City
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6e9e30cc-dde6-438c-adfa-d11fa25db2d1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 85dfc3a4-6078-4b40-8343-342993c4bb48 # Address line
+            handle: phone
+            includeInCards: false
+            instructions: null
+            label: Phone
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b08861d6-9bc7-4247-af30-b41d2d26efe4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 85dfc3a4-6078-4b40-8343-342993c4bb48 # Address line
+            handle: country
+            includeInCards: false
+            instructions: 'Add country'
+            label: Country
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 426ac83f-b8a2-430e-8600-b2d3cdd3bda9
+            userCondition: null
+            warning: null
+            width: 100
+        name: Address
+        uid: 0759aa9c-9feb-458b-9b0f-690af11f4d80
+        userCondition: null
+handle: addressinfo
+name: AddressInfo
+sortOrder: 1
