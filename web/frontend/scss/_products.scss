@@ -82,7 +82,8 @@
   gap: 1rem;
   overflow-y: scroll;
   .product-card {
-    height: auto;
+    min-height: 460px;
+    max-height: 460px;
     background-color: rgba($color-darkest, 0.9);
     border: 1px solid rgba($color-light, 0.1);
     padding-bottom: $padding-xs;
@@ -145,19 +146,31 @@
   }
 }
 
+.product-sub-small {
+  font-family: $font-redhat-display;
+  font-style: italic;
+  font-size: 12px;
+  font-weight: 300;
+  color: hotpink;
+  margin-bottom: $margin-xs;
+  padding: 0 $padding-sm;
+}
+
 .pagination {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
   align-self: center;
   justify-content: center;
   flex-grow: 3;
   font-family: $font-redhat-display;
-  font-size: $fs-sm;
-  font-weight: 300;
+  font-size: 18px;
+  font-weight: 400;
   display: flex;
   justify-content: center;
-  padding: $padding-md;
+  padding: $padding-sm;
+  margin-top: $margin-md;
+  margin-bottom: $margin-md;
 
   .pagination-link {
     margin: 0 16px;

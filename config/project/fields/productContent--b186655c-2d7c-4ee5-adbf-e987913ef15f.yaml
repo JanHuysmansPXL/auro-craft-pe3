@@ -6,7 +6,7 @@ searchable: false
 settings:
   createButtonLabel: null
   entryTypes:
-    - 802276ea-8ed7-4724-b631-5b8ee98b5d7b # Description Extra
+    - 802276ea-8ed7-4724-b631-5b8ee98b5d7b # Tech Specs
     - 64376d7d-992a-4498-8887-6b6d3bcb36d8 # Image Extra
   includeTableView: false
   maxEntries: null

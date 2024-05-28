@@ -1,4 +1,4 @@
-color: null
+color: purple
 fieldLayouts:
   91e6c9ad-a639-4e3a-b8a5-31d0e917c587:
     tabs:
@@ -54,12 +54,12 @@ fieldLayouts:
         userCondition: null
 handle: descriptionExtra
 hasTitleField: true
-icon: text
-name: 'Description Extra'
+icon: microchip
+name: 'Tech Specs'
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
 titleFormat: ''
-titleTranslationKeyFormat: null
+titleTranslationKeyFormat: ''
 titleTranslationMethod: site

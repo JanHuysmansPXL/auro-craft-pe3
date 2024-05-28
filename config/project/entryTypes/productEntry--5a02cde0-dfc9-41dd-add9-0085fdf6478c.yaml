@@ -57,7 +57,7 @@ fieldLayouts:
             instructions: null
             label: null
             providesThumbs: false
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: fa53710f-58d6-4172-a61d-736fe14b0b8e
@@ -72,7 +72,7 @@ fieldLayouts:
             instructions: null
             label: null
             providesThumbs: false
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: f96abea9-20b1-47fe-97b7-1d0c1c5deae3
@@ -124,6 +124,36 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: 9dbbf173-7317-4124-a03d-dabbe8564bfb # Product Rating
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ebf20a62-5898-48bb-8645-121c58205909
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6c9b1183-2e60-43fd-944e-8169ff86fa56 # Productcard - Button Text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 64a40f43-1765-4072-9211-86ebdfa023a6
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: 4c9bc4e7-c0d6-4732-9bc8-851fbc9151fd
         userCondition: null
@@ -133,8 +163,8 @@ icon: amp-guitar
 name: 'Product Entry'
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
 titleFormat: ''
-titleTranslationKeyFormat: null
+titleTranslationKeyFormat: ''
 titleTranslationMethod: site

@@ -1117,7 +1117,8 @@
   overflow-y: scroll;
 }
 .product-list .product-card {
-  height: auto;
+  min-height: 460px;
+  max-height: 460px;
   background-color: rgba(10, 10, 10, 0.9);
   border: 1px solid rgba(243, 243, 243, 0.1);
   padding-bottom: 0.5rem;
@@ -1181,19 +1182,31 @@
   letter-spacing: 2px;
 }
 
+.product-sub-small {
+  font-family: "Red Hat Display", sans-serif;
+  font-style: italic;
+  font-size: 12px;
+  font-weight: 300;
+  color: hotpink;
+  margin-bottom: 0.5rem;
+  padding: 0 1rem;
+}
+
 .pagination {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
   align-self: center;
   justify-content: center;
   flex-grow: 3;
   font-family: "Red Hat Display", sans-serif;
-  font-size: 1rem;
-  font-weight: 300;
+  font-size: 18px;
+  font-weight: 400;
   display: flex;
   justify-content: center;
-  padding: 2rem;
+  padding: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .pagination .pagination-link {
   margin: 0 16px;

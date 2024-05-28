@@ -1,15 +1,15 @@
 columnSuffix: null
-handle: productbutton
+handle: productButtonText
 instructions: 'add product button text'
-name: productbutton
+name: 'Productcard - Button Text'
 searchable: false
 settings:
   byteLimit: null
-  charLimit: null
+  charLimit: 48
   code: false
   initialRows: 4
   multiline: false
-  placeholder: null
+  placeholder: Details
   uiMode: normal
 translationKeyFormat: null
 translationMethod: none

@@ -25,12 +25,14 @@
   {# DIT IS DE NAVBAR #}
   {% include "_snippets/_navbar.twig" %}
 
+
+  {# DIT IS DE PAGINATITEL - PRODUCTS #}
   <section class="gallery_header bg-darkest mt-xl">
     <h2 class="txt-body_md">{{ entry.headingTitle }}.<br></h2>
     <h3 class="txt-title_sm">{{ entry.headingSubtitle }}</h3>
   </section>
 
-  <!-- CONTAINER MET FILTERMENU EN PRODUCT-OVERZICHT  -->
+  {# DIT IS DE WRAPPER MET FILTER LINKS EN PRODUCTEN RECHTS - PRODUCTLIST #}
   <div class="container-fluid products-wrapper bg-darkest mx-auto">
 
     <!-- LEFT SIDE WITH FILTERS -->
@@ -57,21 +59,24 @@
             {% if image %}
               <div class="thumbnail">
                 <img src="{{ image.url }}" alt="{{ image.title }}">
-                <p class="txt-lightpink txt-body_md">{{ product.productDescription }}</p>
               </div>
             {% endif %}
+            <div>
+              <p class="product-sub-small txt-lightpink txt-body_md">{{ product.productDescription }}</p>
+            </div>
             <div class="card-info">
               <div class="card-txt">
                 <h3 class="product-name">{{ product.title }}</h3>
                 <p class="product-price">€ {{ product.price }}</p>
               </div>
-              <a href="{{ product.url }}" class="details-button">Details</a>
+              <a href="{{ product.url }}" class="details-button">{{ product.productButtonText }}</a>
             </div>
           </div>
         {% endfor %}
     </main>
   </div>
 
+{# DIT IS DE PAGINATIE #}
   <div class="container-fluid">
     <div class="container-fluid pagination">
       {% if pageNumber > 1 %}
@@ -92,7 +97,7 @@
   {% endif %}
   </div>
 
-  <!-- DIT IS DE FOOTER -->
+{# DIT IS DE FOOTER TEMPLATE #}
   {% include "_snippets/_footer.twig" %}
 
 {% endblock %}
