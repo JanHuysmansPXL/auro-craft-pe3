@@ -1,0 +1,71 @@
+{% extends "_index" %}
+
+{% block content %}
+    <article>
+        <h1>{{ entry.title }}</h1>
+        
+        {# HIER START DE MATRIX - ALS OPTIE 1 / 2 / OF 3 --> WEERGEVEN #}
+        {% for block in entry.contentBlocksMatrix %}
+            
+             {# ALS OPTIE 1 --> WEERGEVEN #}
+            {% if block.type == "textImageBlock" %}
+                <section class="txt-light text-image-block {{ block.dropdownLR }}">
+                    {% if block.title %}
+                        <h2 class="txt-heading_md" >{{ block.title }}</h2>
+                    {% endif %}
+                    <div class="content">
+                        {% if block.dropdownLR == "Left" %}
+                            <div><img class="page-image" src="{{ block.image.one().url }}" alt=""></div>
+                            <div class="infotxt_sm text">{{ block.text|raw }}</div>
+                        {% else %}
+                            <div class="infotxt_sm text">{{ block.text|raw }}</div>
+                            <div><img class="page-image" src="{{ block.image.one().url }}" alt=""></div>
+                        {% endif %}
+                    </div>
+                </section>
+
+            {# ALS OPTIE 2 --> WEERGEVEN #}
+            {% elseif block.type == "formBlock" %}
+                <section class="form-block">
+                    <h2 class="txt-heading_md" >{{ block.sectionTitle }}</h2>
+                    <p class="infotxt_sm">{{ block.sectionBodytext }}</p>
+                    {% set form = block.form.one() %}
+                    {% if form %}
+                        {{ craft.freeform.renderForm(form) }}
+                    {% endif %}
+                </section>
+
+            {# ALS OPTIE 3 --> WEERGEVEN #}
+            {% elseif block.type == "productsBlock" %}
+                <section class="product-block">
+                    <h2 class="txt-heading_md">{{ block.title }}</h2>
+                    <div class="product-list-row">
+                        <div class="products-box">
+                        {% for product in block.productsField.all() %}
+                            {% set image = product.productImage.one() %}
+                            <div class="product-card">
+                                {% if image %}
+                                    <div class="thumbnail">
+                                        <img src="{{ image.url }}" alt="{{ image.title }}">
+                                    </div>
+                                {% endif %}
+                                <div>
+                                    <p class="product-sub-small txt-lightpink txt-body_md">{{ product.productDescription }}</p>
+                                </div>
+                                <div class="card-info">
+                                    <div class="card-txt">
+                                        <h3 class="product-name">{{ product.title }}</h3>
+                                        <p class="product-price">€
+                                            {{ product.price }}</p>
+                                    </div>
+                                    <a href="{{ product.url }}" class="details-button">{{ product.productButtonText }}</a>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div> 
+                    </div>
+                </section>
+            {% endif %}
+        {% endfor %}
+    </article>
+{% endblock %}

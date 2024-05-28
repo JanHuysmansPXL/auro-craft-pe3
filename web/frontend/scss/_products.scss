@@ -146,6 +146,86 @@
   }
 }
 
+.product-list-row {
+  width: 100%;
+  padding-left: $padding-sm;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;  gap: 1rem;
+  align-items: flex-start;
+  overflow-x: scroll;
+  .product-card {
+    width: 30%;
+    height: auto;
+    background-color: rgba($color-darkest, 0.9);
+    border: 1px solid rgba($color-light, 0.1);
+    padding-bottom: $padding-xs;
+    border-radius: 2px;
+    text-align: start;
+    &:hover {
+      border: 1px solid rgba($color-light, 0.5);
+    }
+    img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+    }
+    .card-info {
+      @include flexlayout();
+      justify-content: space-between;
+      padding: 0 $padding-sm;
+      .card-txt {
+        flex-direction: column;
+        .product-name {
+          font-family: $font-redhat-display;
+          font-size: 1.4rem;
+          font-weight: 600;
+          color: $color-light;
+          margin-top: $margin-xs;
+        }
+        .product-price {
+          font-family: $font-redhat-display;
+          font-size: $fs-sm;
+          font-weight: 500;
+          color: $color-light;
+          margin-bottom: $margin-xs;
+        }
+      }
+      .details-button {
+        font-family: $font-redhat-display;
+        font-size: $fs-sm;
+        font-weight: 500;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: $color-darkest;
+        background-color: $color-light;
+        border: 1px solid $color-white;
+        padding: $padding-xs $padding-sm;
+        outline: none;
+        cursor: pointer;
+        border-radius: 2px;
+        transition: all 0.7s;
+        &:hover {
+          color: $color-light;
+          background-color: transparentize($color-darkest, .5);
+          border: 1px solid $color-white;
+          letter-spacing: 2px;
+        }
+      }
+    }
+  }
+}
+
+.products-box {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 .product-sub-small {
   font-family: $font-redhat-display;
   font-style: italic;

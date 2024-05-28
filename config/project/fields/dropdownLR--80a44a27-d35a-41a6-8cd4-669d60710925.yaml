@@ -1,0 +1,32 @@
+columnSuffix: null
+handle: dropdownLR
+instructions: 'Pick a side.'
+name: 'Dropdown L/R'
+searchable: false
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Left
+        -
+          - value
+          - left
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Right
+        -
+          - value
+          - right
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

@@ -1,0 +1,35 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - bc7b29f5-8dba-4420-9931-72f02ce72723 # Page with Blocks
+handle: pages
+maxAuthors: 1
+name: Pages
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  2b1f5981-d58e-4a2f-8225-ee102113ad97: # Auro Craft - Nederlands
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/_entry.twig
+    uriFormat: 'pages/{slug}'
+  c8882d7d-4c84-40d3-a270-4653a2dfec91: # auro-craft
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/_entry.twig
+    uriFormat: 'pages/{slug}'
+structure:
+  maxLevels: null
+  uid: 47fc1c95-f2b0-4927-838d-3ff6d86aa879
+type: structure

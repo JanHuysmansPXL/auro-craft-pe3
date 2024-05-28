@@ -370,6 +370,16 @@
   border-bottom: 2px solid rgb(243, 243, 243);
 }
 
+/* CAT */
+.category-top li {
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+}
+.category-top li .category-top li a {
+  text-decoration: none;
+}
+
 /* BRAND TEXT */
 .brand-title {
   font-weight: 300;
@@ -444,7 +454,7 @@
 .txt-body_md {
   font-family: "Red Hat Display", sans-serif;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   color: #FFFFFF;
   margin-bottom: 0.2rem;
 }
@@ -547,6 +557,45 @@
   letter-spacing: 1.5px;
 }
 
+.freeform-button-submit {
+  background-color: hotpink;
+  border: 1px solid white;
+  border-radius: 1px;
+  padding: 0.5rem 1rem;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(243, 243, 243);
+  margin-top: 1rem;
+  transition: all 0.3s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  cursor: pointer;
+}
+.freeform-button-submit:hover {
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #0a0a0a;
+}
+
+.freeform-input {
+  display: block;
+  height: 3rem;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(10, 10, 10, 0);
+  color: rgb(243, 243, 243);
+  padding: 1rem;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 300;
+  transition-property: background-color;
+  transition-duration: 0.7s;
+}
+.freeform-input:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.freeform-input:focus {
+  border: 1px solid rgb(243, 243, 243);
+}
+
 .cart-products-link a {
   text-decoration: none;
   font-family: "Red Hat Display", sans-serif;
@@ -612,6 +661,12 @@
   font-weight: 700;
   background-color: rgb(243, 243, 243);
   color: #0a0a0a;
+}
+
+.page-image {
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
 }
 
 /* CARD */
@@ -1223,6 +1278,89 @@
   background-color: rgba(10, 10, 10, 0.5);
   border: 1px solid #FFFFFF;
   letter-spacing: 2px;
+}
+
+.product-list-row {
+  width: 100%;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 1rem;
+  align-items: flex-start;
+  overflow-x: scroll;
+}
+.product-list-row .product-card {
+  width: 30%;
+  height: auto;
+  background-color: rgba(10, 10, 10, 0.9);
+  border: 1px solid rgba(243, 243, 243, 0.1);
+  padding-bottom: 0.5rem;
+  border-radius: 2px;
+  text-align: start;
+}
+.product-list-row .product-card:hover {
+  border: 1px solid rgba(243, 243, 243, 0.5);
+}
+.product-list-row .product-card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.product-list-row .product-card .card-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+.product-list-row .product-card .card-info .card-txt {
+  flex-direction: column;
+}
+.product-list-row .product-card .card-info .card-txt .product-name {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: rgb(243, 243, 243);
+  margin-top: 0.5rem;
+}
+.product-list-row .product-card .card-info .card-txt .product-price {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(243, 243, 243);
+  margin-bottom: 0.5rem;
+}
+.product-list-row .product-card .card-info .details-button {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #0a0a0a;
+  background-color: rgb(243, 243, 243);
+  border: 1px solid #FFFFFF;
+  padding: 0.5rem 1rem;
+  outline: none;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.7s;
+}
+.product-list-row .product-card .card-info .details-button:hover {
+  color: rgb(243, 243, 243);
+  background-color: rgba(10, 10, 10, 0.5);
+  border: 1px solid #FFFFFF;
+  letter-spacing: 2px;
+}
+
+.products-box {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .product-sub-small {

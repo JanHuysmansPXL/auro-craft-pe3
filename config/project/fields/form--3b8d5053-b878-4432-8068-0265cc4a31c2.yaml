@@ -1,0 +1,22 @@
+columnSuffix: null
+handle: form
+instructions: 'Add the form'
+name: Form
+searchable: true
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: 0
+  selectionLabel: 'Add an entry'
+  showCardsInGrid: false
+  showSiteMenu: false
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: true
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

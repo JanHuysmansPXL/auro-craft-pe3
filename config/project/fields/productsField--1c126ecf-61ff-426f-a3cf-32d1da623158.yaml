@@ -1,0 +1,54 @@
+columnSuffix: null
+handle: productsField
+instructions: 'Add 3 products'
+name: 'Products Field'
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: 3
+  minRelations: 3
+  selectionCondition:
+    __assoc__:
+      -
+        - elementType
+        - craft\elements\Entry
+      -
+        - fieldContext
+        - global
+      -
+        - class
+        - craft\elements\conditions\entries\EntryCondition
+      -
+        - conditionRules
+        -
+          -
+            __assoc__:
+              0:
+                - class
+                - craft\fields\conditions\RelationalFieldConditionRule
+              1:
+                - uid
+                - 0bbdb5a8-a2ee-4d9b-b77e-fe9cfe278afa
+              2:
+                - operator
+                - notempty
+              4:
+                - fieldUid
+                - bfa74cfc-5409-45e2-9828-99f7d84b23ab # Image
+              5:
+                - layoutElementUid
+                - 556a8c04-959e-4bd6-b2f6-dae5328223dd
+  selectionLabel: null
+  showCardsInGrid: true
+  showSiteMenu: false
+  sources:
+    - 'section:0171bf2f-ea8c-4569-aceb-c711956ef63e' # Products
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

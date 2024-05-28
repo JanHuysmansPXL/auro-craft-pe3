@@ -9,21 +9,24 @@
 
 {% set productContent = entry.productContent.all() %}
 
-  <h1 class="txt-white txt-heading_lg pt-xl">THIS IS AN _entry.twig TEMPLATE -- PRODUCT PAGE </h1>
 
-  <h1 class="txt-white txt-heading_md">Post Date: {{ entry.headingTitle }}</h1>
+<div class="container-fluid">
+  <h1 class="txt-light infotxt_strong pt-xl">{{ entry.postDate | date  }} </h1>
 
+ {# 
+ <h1 class="txt-white txt-heading_md">Post Date: {{ entry.headingTitle }}</h1> 
   <time class="txt-white txt-heading_md"  datetime="{{ entry.postDate | atom }}">
     {{ entry.postDate | date }}
   </time>
+ 
 
   {% if categories | length %}
-    <ul class="categories link">
+    <ul class="categories category-top link">
       {% for category in categories %}
-        <li class="txt-white txt-heading_md" >Category: {{ category.getLink() }}</li>
+        <li class="txt-white txt-heading_md"><a>{{ category.getLink() }}</a></li>
       {% endfor %}
     </ul>
-  {% endif %}
+  {% endif %} #}
 
 {# TEMP AWAY - USE FOR IMAGE OVERLAY OF PRODUCTS PAGE MAIN.
   <div class="container-fluid">
@@ -61,15 +64,15 @@
     <div class="product-info">
       <h1 class="info-heading">{{ entry.title }}</h1>
       <p class="info-subheading">{{ entry.productDescription }}</p>
+      <p class="txt-body_md mt-sm">{{ entry.descriptionLarge }}</p>
       <p class="infotxt_lg mt-md mb-md">€ {{ entry.price }}</p>
-      <p class="infotxt_sm"><span class="infotxt_strong">Availability:</span> In stock. --hardcoded</p>
-      <p class="infotxt_sm"><span class="infotxt_strong">Ratings: --hardcoded</span>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-      </p>
+      <p class="infotxt_sm"><span class="infotxt_strong">Availability:</span> {{entry.stock}} </p>
+      <p class="infotxt_sm">
+            <span class="infotxt_strong">Rating: </span>
+            {% for i in range(1, entry.productRating) %}
+                <i class="fas fa-star"></i>
+            {% endfor %}
+        </p>
       <a href="#" class="cart-button mt-lg">Add to cart</a>
     </div>
   </div>
@@ -102,30 +105,20 @@
         {% else %}
           {# `for` tags also support an `else` block for when there’s no content! #}
           <div class="content-block empty">
-            <p class="txt-white txt-heading_md">This products has no specs avaialble, sorry.</p>
+            <p class="txt-white txt-heading_md">No specs available.<br>Contact us for more details.</p>
           </div>
         {% endfor %}
       </div>
       <div class="specs-right">
-        <p class="txt-heading_md mt-sm mb-md"><span class="infotxt_strong">Technical Specs:</span></p>
-        <ul class="product-info-list">
-          <li class="infotxt_sm"><i class="fas fa-stream"></i>Bone conduction --hardcoded</li>
-          <li class="infotxt_sm"><i class="fab fa-bluetooth-b"></i> Bluetooth 5.0 --hardcoded</li>
-          <li class="infotxt_sm"><i class="fas fa-battery-full"></i>Battery Life: 24h --hardcoded</li>
-          <li class="infotxt_sm"><i class="fas fa-volume-up"></i>Active Noise Cancelling --hardcoded</li>
-          <li class="infotxt_sm"><i class="fas fa-mobile-alt"></i>Compatibility: Smartphone, tablet, laptop --hardcoded</li>
-          <li class="infotxt_sm"><i class="fas fa-comment-dots"></i>Supported: Siri, Google Assistant, Alexa --hardcoded</li>
-        </ul>
       </div>
     </div>
     <div class="line mt-lg"></div>
   </div>
 
-
   <!-- MATRIX BLOCK HANDLING - +1 EXTRA IMAGE OR +1 EXTRA DESCRIPTION-->
-
   <div class="product-content">
 
+</div>
 </div>
 
 

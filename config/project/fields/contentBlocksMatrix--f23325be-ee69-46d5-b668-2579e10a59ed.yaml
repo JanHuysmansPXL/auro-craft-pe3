@@ -1,0 +1,31 @@
+columnSuffix: null
+handle: contentBlocksMatrix
+instructions: 'Add content to the matrix'
+name: 'Content Blocks Matrix'
+searchable: true
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - 0576b5dc-9469-43e1-ba29-737dc468891e # Text + Image Block
+    - b06674c4-515b-4c76-a224-d4febe725579 # Form Block
+    - f747e72c-af65-4f1e-a968-c05cc3d3fcc1 # Products Block
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  siteSettings:
+    __assoc__:
+      -
+        - c8882d7d-4c84-40d3-a270-4653a2dfec91 # auro-craft
+        -
+          __assoc__:
+            -
+              - template
+              - _e
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,4 +1,4 @@
-dateModified: 1716899202
+dateModified: 1716915780
 email:
   fromEmail: 12201074@student.pxl.be
   fromName: auro-craft
@@ -13,9 +13,12 @@ fs:
     url: '@web/assets/images'
 meta:
   __names__:
+    0cdb91d0-d08f-413b-bd69-9157eccb92e9: 'Toggle Title' # Toggle Title
     0e584376-73fd-4211-8da1-a084ab59ce9e: images # images
+    1c126ecf-61ff-426f-a3cf-32d1da623158: 'Products Field' # Products Field
     2b1f5981-d58e-4a2f-8225-ee102113ad97: 'Auro Craft - Nederlands' # Auro Craft - Nederlands
     2b50aeaf-630e-40de-9f85-5722be92682b: 'Product Card' # Product Card
+    3b8d5053-b878-4432-8068-0265cc4a31c2: Form # Form
     4ef124f9-4492-4355-bdee-0d09f9ff66ee: footerContent # footerContent
     5a02cde0-dfc9-41dd-add9-0085fdf6478c: 'Product Entry' # Product Entry
     5abaf36c-a1ba-4e67-805e-ab9b554f279d: Contact # Contact
@@ -26,17 +29,21 @@ meta:
     6f357ba9-745d-43a5-b15d-a51e4210db0c: auro-craft # auro-craft
     09bf03b0-9b61-47ee-b078-f8a099b7b5e0: 'Navbar Content' # Navbar Content
     9dbbf173-7317-4124-a03d-dabbe8564bfb: 'Product Rating' # Product Rating
+    38dc8a23-2a19-4a1c-88fb-53a74646a7cc: text # text
     42db3d65-1575-49e2-bd36-9c432e8d400b: 'Public Schema' # Public Schema
     48dead7f-462e-4dbb-b3fd-6f350bebe474: Navbar # Navbar
     49fade99-c7c8-477b-a9d3-881c8d99d1b0: 'Social Link' # Social Link
     69cb2d0b-dde7-471f-8e3d-8ce3746e2c62: 'Product Categories' # Product Categories
+    80a44a27-d35a-41a6-8cd4-669d60710925: 'Dropdown L/R' # Dropdown L/R
     85dfc3a4-6078-4b40-8343-342993c4bb48: 'Address line' # Address line
+    87c9637b-d18b-43c4-93ac-5e7c07b2b6b9: Pages # Pages
     98c3dc06-93d3-4762-a012-2f5e3e528199: Price # Price
     0171bf2f-ea8c-4569-aceb-c711956ef63e: Products # Products
     179ce946-08aa-45b3-9c13-29121aeb7a21: 'ProductPage Entry' # ProductPage Entry
     219da0e2-0df2-48c5-ba10-b7854367246b: Footer # Footer
     291a5e20-cc3e-4d3b-9ea6-acfd998fb2ae: 'Product Image' # Product Image
     485aa77d-cdbd-41f9-b327-610c6c182c10: 'Section Bodytext' # Section Bodytext
+    0576b5dc-9469-43e1-ba29-737dc468891e: 'Text + Image Block' # Text + Image Block
     818b0433-7a51-4cd8-96f4-2022cffcc1f7: 'Heading Title' # Heading Title
     3337ad6f-af9f-4439-817d-0586f687690a: 'Hero Image' # Hero Image
     64376d7d-992a-4498-8887-6b6d3bcb36d8: 'Image Extra' # Image Extra
@@ -46,8 +53,10 @@ meta:
     a79f21c3-a954-495d-8f94-8b6fc88377b7: 'Page Subtitle' # Page Subtitle
     ae6b26e1-b817-41a9-89ca-0de5e4d3cc5b: 'Product Categories' # Product Categories
     ae793556-b602-4d72-89b3-113498ec50ee: 'Product Description' # Product Description
+    b06674c4-515b-4c76-a224-d4febe725579: 'Form Block' # Form Block
     b186655c-2d7c-4ee5-adbf-e987913ef15f: 'Product Content' # Product Content
     bbdd2418-0f9f-45ab-b477-bd4f526be57e: 'Section Subtitle' # Section Subtitle
+    bc7b29f5-8dba-4420-9931-72f02ce72723: 'Page with Blocks' # Page with Blocks
     bfa74cfc-5409-45e2-9828-99f7d84b23ab: Image # Image
     c8882d7d-4c84-40d3-a270-4653a2dfec91: auro-craft # auro-craft
     dc19075c-155d-4afa-a469-d86a7c73a291: Homepage-Entry # Homepage-Entry
@@ -56,6 +65,8 @@ meta:
     e382f540-6622-4500-804d-034bf966905c: SectionTitle # SectionTitle
     ecf08738-def7-40fb-92d9-f458d6926431: 'Login Button' # Login Button
     f63ac959-50e1-4e52-81ef-0fa2fe27393b: Contact-page # Contact-page
+    f747e72c-af65-4f1e-a968-c05cc3d3fcc1: 'Products Block' # Products Block
+    f23325be-ee69-46d5-b668-2579e10a59ed: 'Content Blocks Matrix' # Content Blocks Matrix
 plugins:
   cookie-consent:
     edition: standard

@@ -129,6 +129,17 @@
 }
 
 
+/* CAT */
+
+.category-top li {
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+  .category-top li a {
+    text-decoration: none;
+}
+}
+
 /* BRAND TEXT */
 
 .brand-title {
@@ -197,7 +208,7 @@
 .txt-body_md {
   font-family: $font-redhat-display;
   font-size: $fs-sm;
-  font-weight: 400;
+  font-weight: 300;
   color: $color-white;
   margin-bottom: .2rem;
 }
@@ -300,6 +311,44 @@
   }
 }
 
+.freeform-button-submit {
+  background-color: hotpink;
+  border: 1px solid white;
+  border-radius: 1px;
+  padding: $padding-xs $padding-sm;
+  font-family: $font-redhat-display;
+  font-size: $fs-sm;
+  font-weight: 500;
+  color: $color-light;
+  margin-top: $margin-sm;
+  transition: all .3s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  cursor: pointer;
+  &:hover {
+      background-color: rgba(255,255,255,0.85);
+      color: #0a0a0a;
+  }
+}
+.freeform-input {
+  display: block;
+  height: 3rem;
+  width: 100%;
+  background-color: rgba(255,255,255,0.05);
+  border: 1px solid (rgba($color-darkest, 0));
+  color: $color-light;
+  padding: $padding-sm;
+  margin-top: $margin-xs;
+  font-size: $fs-sm;
+  font-weight: 300;
+  transition-property: background-color;
+  transition-duration: .7s;
+  &:hover {
+      background-color: rgba(255,255,255,0.15)
+  }
+  &:focus {
+      border: 1px solid $color-light;
+  }
+}
+
   .cart-products-link a {
     text-decoration: none;
     font-family: $font-redhat-display;
@@ -362,6 +411,12 @@
   font-weight: 700;
       background-color: $color-light;
       color: $color-darkest;
+}
+
+.page-image {
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
 }
 
 /* CARD */

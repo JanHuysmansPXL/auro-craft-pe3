@@ -1,0 +1,12 @@
+columnSuffix: null
+handle: toggleTitle
+instructions: 'Show the title ?'
+name: 'Toggle Title'
+searchable: false
+settings:
+  default: true
+  offLabel: 'Hide Title'
+  onLabel: 'Show Title'
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Lightswitch
