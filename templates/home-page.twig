@@ -21,9 +21,9 @@
 {# IMAGE SECTION #}
 <div class="container-fluid">
     <section class="showcase">
-        <img class="img-bkg" src={{ heroImage.url }} alt={{ heroImage.alt }}>
-        {# <video class="video-bkg" src="assets/media/auro_vid2.mp4" muted loop autoplay></video> #}
-        <div class="overlay">
+      {#  <img class="img-bkg" src={{ heroImage.url }} alt={{ heroImage.alt }}>
+         <video class="video-bkg" src="assets/media/auro_vid2.mp4" muted loop autoplay></video> #}
+        <div class="overlay" style="background-image: url('{{heroImage.url}}'); object-fit: contain;">
             <div class="showcase-text">
                 <h2 class="txt-heading_xl">{{entry.headingTitle}}</h2>
                 <p class="txt-body_md">{{entry.headingSubtitle}}</p>
